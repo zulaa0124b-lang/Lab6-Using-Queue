@@ -13,4 +13,9 @@ public class PlayingCard {
     public String toString() {
         return CardValues[cardValue] + SuitValues[suitValue];
     }
+    public int compareTo(PlayingCard card) {
+        return cardValue - card.playingCardValue();
+    }
+
+
 }
